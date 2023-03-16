@@ -1,0 +1,17 @@
+<div class="flex items-center justify-center h-screen">
+  <div class="min-w-md max-w-xl w-full">
+    <div class="bg-white shadow-md py-20 px-40">
+
+      <h2 class="vragen">Veelgestelde vragen</h2>
+
+      <faq-accordion *ngFor="let vraag of vragen" [vraagItem]="vraag">
+      </faq-accordion>
+
+      <button class="bg-[#82DB39] text-white px-4 py-2 rounded mt-4">
+        Bekijk alle vragen
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+    </div>
+  </div>
+</div>

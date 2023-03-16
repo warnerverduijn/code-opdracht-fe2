@@ -1,0 +1,11 @@
+<div class="accordion" *ngIf="vraagItem.id < 5" [class.active]="vraagItemOpen">
+  <div class="accordion__item">
+    <div class="accordion__item-header" (click)="toggleItem()">
+      <i [ngClass]="{'fa-plus': !vraagItemOpen, 'fa-minus': vraagItemOpen}" class="fas"></i>
+      <div class="title">{{ vraagItem.title }} </div>
+    </div>
+    <div class="accordion__item-content" *ngIf="vraagItemOpen">
+      {{ vraagItem.description }}
+    </div>
+  </div>
+</div>
